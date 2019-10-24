@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="ticTakToeBinding"
+            type="com.uma.tictaktoe.TicTakToeVM" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TicTakToeActivity">
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/txtStyle"
+            android:onClick="btnClick"
+            app:layout_constraintRight_toLeftOf="@id/tv2"
+            app:layout_constraintBottom_toTopOf="@id/tv6"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/txtStyle"
+            android:onClick="btnClick"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv5" />
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/txtStyle"
+            android:onClick="btnClick"
+            app:layout_constraintLeft_toRightOf="@id/tv2"
+            app:layout_constraintBottom_toTopOf="@id/tv6"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/txtStyle"
+            android:onClick="btnClick"
+            app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintRight_toLeftOf="@id/tv5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv5"
+            style="@style/txtStyle"
+            android:onClick="btnClick"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv6"
+            style="@style/txtStyle"
+            android:onClick="btnClick"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv7"
+            style="@style/txtStyle"
+            android:onClick="btnClick"
+            app:layout_constraintTop_toBottomOf="@id/tv4"
+            app:layout_constraintRight_toLeftOf="@id/tv8" />
+
+        <TextView
+            android:id="@+id/tv8"
+            style="@style/txtStyle"
+            android:onClick="btnClick"
+            app:layout_constraintTop_toBottomOf="@id/tv5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv9"
+            style="@style/txtStyle"
+            android:onClick="btnClick"
+            app:layout_constraintTop_toBottomOf="@id/tv6"
+            app:layout_constraintLeft_toRightOf="@id/tv8"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
